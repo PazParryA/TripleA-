@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripleA | Blog</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" aria-label="Navegación principal">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img class="w-50" src="/assets/img/logo-triplea-light.svg" alt="" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/Op2/index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Servicios
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/Op2/servicio-desarrollo-software.html">Desarrollo de Software</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Op2/servicio-cognitivos.html">Servicios Cognitivos</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Op2/servicio-inteligencia.html">Inteligencia Artificial</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Op2/servicio-big-data.html">Big Data y Data Science</a>
+                  </li>
+                  <li><a class="dropdown-item" href="/Op2/servicio-consultoria.html">Consultoría TI</a></li>
+                  <li><a class="dropdown-item" href="/Op2/servicio-outsourcing-ti.html">Outsourcing TI</a></li>
+                  <li><a class="dropdown-item" href="/Op2/servicio-rpa.html">Servicios RPA</a></li>
+                  <li><a class="dropdown-item" href="/Op2/servicio-dba.html">Servicios DBA</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-instagram"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+    </div>
+</nav>
+    <!-- Hero Section -->
+    <section id="hero-blog" class="bg-dark text-white py-5 text-center mt-5">
+        <div class="container">
+            <h1 class="display-4">Título del Artículo</h1>
+            <p class="lead">Publicado el 23 de Octubre, 2024 | Categoría: Tecnología</p>
+        </div>
+    </section>
+
+    <!-- Contenido del Blog -->
+    <section id="blog-content" class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Contenido Principal -->
+                <div class="col-lg-8">
+                    <article>
+                        <img src="img/articulo.jpg" class="img-fluid mb-4" alt="Imagen destacada del artículo">
+                        <h2 class="mb-4">Subtítulo del Artículo</h2>
+                        <p>
+                            Este es el contenido del artículo. Aquí puedes añadir tus párrafos, imágenes, citas y cualquier otro contenido que necesites. Utiliza este espacio para exponer tu información de manera clara y estructurada.
+                        </p>
+                        <blockquote class="blockquote my-4">
+                            <p class="mb-0">"Esta es una cita destacada que puedes usar para resaltar alguna parte importante del texto."</p>
+                            <footer class="blockquote-footer">Autor de la cita</footer>
+                        </blockquote>
+                        <p>
+                            Puedes seguir desarrollando el tema del artículo con más contenido. Asegúrate de que sea visualmente atractivo y fácil de leer.
+                        </p>
+                        <img src="img/articulo-interno.jpg" class="img-fluid my-4" alt="Imagen dentro del artículo">
+                        <p>
+                            Finaliza tu artículo con una conclusión clara o una invitación a la acción para tus lectores.
+                        </p>
+                    </article>
+                </div>
+
+                <!-- Barra Lateral -->
+                <div class="col-lg-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Categorías</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Tecnología</a></li>
+                                <li><a href="#">Desarrollo Web</a></li>
+                                <li><a href="#">Inteligencia Artificial</a></li>
+                                <li><a href="#">Consultoría</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Artículos Recientes</h5>
+                            <ul class="list-unstyled" id="articulos-recientes">
+                                <!-- Los artículos se cargarán aquí dinámicamente -->
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Mi Agencia de Software. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Función para cargar los artículos recientes desde un archivo JSON
+        function cargarArticulosRecientes() {
+            // Ruta al archivo JSON (puede estar en el mismo servidor)
+            fetch('articulos.json')
+                .then(response => response.json())
+                .then(data => {
+                    const articulos = data.articulos;
+                    const listaArticulos = document.getElementById('articulos-recientes');
+    
+                    // Vaciar la lista actual
+                    listaArticulos.innerHTML = '';
+    
+                    // Añadir cada artículo al listado
+                    articulos.forEach(articulo => {
+                        const li = document.createElement('li');
+                        li.innerHTML = `<a href="${articulo.url}">${articulo.titulo}</a>`;
+                        listaArticulos.appendChild(li);
+                    });
+                })
+                .catch(error => console.error('Error al cargar los artículos recientes:', error));
+        }
+    
+        // Cargar los artículos recientes cuando la página se cargue
+        document.addEventListener('DOMContentLoaded', cargarArticulosRecientes);
+
+        // Recargar automáticamente cada 60 segundos (60000 milisegundos)
+    setInterval(cargarArticulosRecientes, 60000);
+    </script>
+    
+</body>
+</html>
